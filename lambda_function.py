@@ -5,7 +5,7 @@ import os
 
 def lambda_handler(event, context):
     client = boto3.client('lambda')
-    #test
+
     function = {
         "ApplicantEvent": os.environ["LAMBDA_APPLICANT_EVENT"],
         "JobEvent": os.environ["LAMBDA_JOB_EVENT"],
